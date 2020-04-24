@@ -1,0 +1,108 @@
+{
+  "id": 5,
+  "name": "Call Back - With Answer - FBHP (N-8620021)",
+  "subject": ["All Subjects"],
+  "audience": ["Member"],
+  "marketSegment": ["U65GF"],
+  "canUploadDocument": false,
+  "canShowLetterName": true,
+  "autoAttachedForms": [],
+  "jsonFormData": {
+    "name": "N8620021",
+    "label": "N8620021",
+    "data": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "",
+      "city": "Springfield",
+      "state": "IA",
+      "zip": 50312,
+      "patientAccount": "",
+      "claim1": "12345678",
+      "dateOfServiceFrom": "2020-03-02",
+      "dateOfServiceTo": "2020-03-02",
+      "accountReceivable": "",
+      "amoountDue": "",
+      "adjustmentReason": ""
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "addressLine1": { "type": "string" },
+        "addressLine2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["IA", "SD"] },
+        "zip": { "type": "integer" },
+        "patientAccount": { "type": "integer", "title": "Patient Account #" },
+        "claim1": { "type": "integer", "title": "Claim 1 #" },
+        "dateOfServiceFrom": {
+          "type": "string",
+          "title": "Date of Service From",
+          "format": "date"
+        },
+        "dateOfServiceTo": {
+          "type": "string",
+          "title": "Date of Service To",
+          "format": "date"
+        },
+        "accountReceivable": {
+          "type": "integer",
+          "title": "Account Receivable #"
+        },
+        "amoountDue": { "type": "integer" },
+        "adjustmentReason": { "type": "string" }
+      },
+      "required": []
+    },
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/firstName", "width": 50 },
+        { "type": "Control", "scope": "#/properties/lastName", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine1",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine2",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/city", "width": 50 },
+        { "type": "Control", "scope": "#/properties/state", "width": 25 },
+        { "type": "Control", "scope": "#/properties/zip", "width": 25 },
+        {
+          "type": "Control",
+          "scope": "#/properties/patientAccount",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/claim1", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/dateOfServiceFrom",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dateOfServiceTo",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/accountReceivable",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/amoountDue", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/adjustmentReason",
+          "width": 100
+        }
+      ]
+    }
+  }
+}

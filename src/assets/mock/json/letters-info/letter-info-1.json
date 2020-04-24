@@ -1,0 +1,140 @@
+{
+  "id": 1,
+  "name": "Attorney - Authorization Request (B-3320)",
+  "subject": ["Legal"],
+  "audience": ["Attorney"],
+  "marketSegment": ["U65GF", "U65GM"],
+  "canUploadDocument": false,
+  "canShowLetterName": true,
+  "autoAttachedForms": [],
+  "jsonFormData": {
+    "name": "B3320",
+    "label": "B3320",
+    "data": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "",
+      "city": "Springfield",
+      "state": "IA",
+      "zip": 50312,
+      "member1": {
+        "isChecked": false,
+        "extendFields": ["Marge Simpson", "2020-03-02"]
+      },
+      "member2": {
+        "isChecked": false,
+        "extendFields": ["Lisa Simpson", "2020-03-02"]
+      },
+      "member3": {
+        "name": "",
+        "extendFields": ["Bart Simpson", "2020-03-02"]
+      }
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "description": "First Name"
+        },
+        "lastName": { "type": "string" },
+        "addressLine1": { "type": "string" },
+        "addressLine2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["IA", "SD"] },
+        "zip": { "type": "integer" },
+        "member1": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Member Name",
+              "type": "input"
+            },
+            {
+              "name": "Effective Date",
+              "type": "date"
+            }
+          ]
+        },
+        "member2": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Member Name",
+              "type": "input"
+            },
+            {
+              "name": "Effective Date",
+              "type": "date"
+            }
+          ]
+        },
+        "member3": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Member Name",
+              "type": "input"
+            },
+            {
+              "name": "Effective Date",
+              "type": "date"
+            }
+          ]
+        }
+      }
+    },
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/firstName",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/lastName",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine1",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine2",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/city", "width": 50 },
+        { "type": "Control", "scope": "#/properties/state", "width": 25 },
+        { "type": "Control", "scope": "#/properties/zip", "width": 25 },
+        {
+          "type": "Label",
+          "text": "Select dependents who need verification:",
+          "width": 100
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/member1",
+          "width": 100
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/member2",
+          "width": 100
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/member3",
+          "width": 100
+        }
+      ]
+    }
+  }
+}

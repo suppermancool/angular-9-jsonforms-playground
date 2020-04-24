@@ -1,0 +1,150 @@
+{
+  "id": 1,
+  "name": "EFT Form (M-5779)",
+  "marketSegment": ["U65GF"],
+  "state": ["IA"],
+  "jsonFormData": {
+    "name": "B4009",
+    "label": "B4009",
+    "data": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "",
+      "city": "Springfield",
+      "state": "IA",
+      "zip": 50312,
+      "policyHolderMedical": "",
+      "spouseMedical": "",
+      "policyHolderDental": "",
+      "spouseDental": "",
+      "policyHolderVision": "",
+      "spouseVision": "",
+      "dependent1Name": "Lisa Simpson",
+      "dependent2Name": "Bart Simpson",
+      "dependent1Medical": "",
+      "dependent2Medical": "",
+      "dependent1Dental": "",
+      "dependent2Dental": "",
+      "dependent1Vison": "",
+      "dependent2Vison": ""
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "addressLine1": { "type": "string" },
+        "addressLine2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["IA", "SD"] },
+        "zip": { "type": "integer" },
+        "policyHolderMedical": { "type": "string" },
+        "spouseMedical": { "type": "string" },
+        "policyHolderDental": { "type": "string" },
+        "spouseDental": { "type": "string" },
+        "policyHolderVision": { "type": "string" },
+        "spouseVision": { "type": "string" },
+        "dependent1Name": { "type": "string" },
+        "dependent2Name": { "type": "string" },
+        "dependent1Medical": { "type": "string" },
+        "dependent2Medical": { "type": "string" },
+        "dependent1Dental": { "type": "string" },
+        "dependent2Dental": { "type": "string" },
+        "dependent1Vison": { "type": "string" },
+        "dependent2Vison": { "type": "string" }
+      },
+      "required": []
+    },
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/firstName", "width": 50 },
+        { "type": "Control", "scope": "#/properties/lastName", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine1",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine2",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/city", "width": 50 },
+        { "type": "Control", "scope": "#/properties/state", "width": 25 },
+        { "type": "Control", "scope": "#/properties/zip", "width": 25 },
+        {
+          "type": "Control",
+          "scope": "#/properties/policyHolderMedical",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/spouseMedical",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/policyHolderDental",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/spouseDental",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/policyHolderVision",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/spouseVision",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent1Name",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent2Name",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent1Medical",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent2Medical",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent1Dental",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent2Dental",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent1Vison",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependent2Vison",
+          "width": 50
+        }
+      ]
+    }
+  }
+}

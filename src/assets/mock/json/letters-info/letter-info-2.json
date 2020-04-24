@@ -1,0 +1,108 @@
+{
+  "id": 2,
+  "name": "Housing - POA Needed (B-4684)",
+  "subject": ["Billing/Finance"],
+  "audience": ["Housing Authority"],
+  "marketSegment": ["MSUP"],
+  "canUploadDocument": true,
+  "canShowLetterName": true,
+  "autoAttachedForms": [],
+  "jsonFormData": {
+    "name": "B4684",
+    "label": "B4684",
+    "data": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "",
+      "city": "Springfield",
+      "state": "IA",
+      "zip": 50312,
+      "member1Name": "Homer Simpson",
+      "member2Name": "Marge Simpson",
+      "member1Age": "",
+      "member2Age": "",
+      "member1PremiumTotal": "",
+      "member2PremiumTotal": "",
+      "member3Name": "Lisa Simpson",
+      "member4Name": "Bart Simpson",
+      "member3Age": "",
+      "member4Age": "",
+      "member3PremiumTotal": "",
+      "member4PremiumTotal": ""
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "addressLine1": { "type": "string" },
+        "addressLine2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["IA", "SD"] },
+        "zip": { "type": "integer" },
+        "member1Name": { "type": "string" },
+        "member2Name": { "type": "string" },
+        "member1Age": { "type": "integer" },
+        "member2Age": { "type": "integer" },
+        "member1PremiumTotal": { "type": "integer" },
+        "member2PremiumTotal": { "type": "integer" },
+        "member3Name": { "type": "string" },
+        "member4Name": { "type": "string" },
+        "member3Age": { "type": "integer" },
+        "member4Age": { "type": "integer" },
+        "member3PremiumTotal": { "type": "integer" },
+        "member4PremiumTotal": { "type": "integer" }
+      },
+      "required": []
+    },
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/firstName", "width": 50 },
+        { "type": "Control", "scope": "#/properties/lastName", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine1",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine2",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/city", "width": 50 },
+        { "type": "Control", "scope": "#/properties/state", "width": 25 },
+        { "type": "Control", "scope": "#/properties/zip", "width": 25 },
+        { "type": "Control", "scope": "#/properties/member1Name", "width": 50 },
+        { "type": "Control", "scope": "#/properties/member2Name", "width": 50 },
+        { "type": "Control", "scope": "#/properties/member1Age", "width": 50 },
+        { "type": "Control", "scope": "#/properties/member2Age", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/member1PremiumTotal",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/member2PremiumTotal",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/member3Name", "width": 50 },
+        { "type": "Control", "scope": "#/properties/member4Name", "width": 50 },
+        { "type": "Control", "scope": "#/properties/member3Age", "width": 50 },
+        { "type": "Control", "scope": "#/properties/member4Age", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/member3PremiumTotal",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/member4PremiumTotal",
+          "width": 50
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": 4,
+  "name": "Cashed Check Copy (B-5651-9601-9602)",
+  "subject": ["Claims & Billing/Finance"],
+  "audience": ["All"],
+  "marketSegment": ["MSUP"],
+  "canUploadDocument": true,
+  "canShowLetterName": true,
+  "autoAttachedForms": ["Attached form 1", "Attached form 2"],
+  "jsonFormData": {
+    "name": "B5651-B9601-B9602",
+    "label": "B5651-B9601-B9602",
+    "data": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "",
+      "city": "Springfield",
+      "state": "IA",
+      "zip": 50312,
+      "dependentNames": "Homer Simpson, Marge Simpson, Lisa Simpson, Bart Simpson",
+      "deductible": {
+        "isChecked": false,
+        "extendFields": [""]
+      },
+      "copaymentCoinsurance": {
+        "isChecked": false,
+        "extendFields": [""]
+      },
+      "outOfPicketMaximum": {
+        "isChecked": false,
+        "extendFields": [""]
+      },
+      "repatriation": {
+        "isChecked": false,
+        "extendFields": [""]
+      }
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "addressLine1": { "type": "string" },
+        "addressLine2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["IA", "SD"] },
+        "zip": { "type": "integer" },
+        "dependentNames": { "type": "string", "description": "Zip" },
+        "deductible": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Deductible",
+              "type": "input"
+            }
+          ]
+        },
+        "copaymentCoinsurance": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Copayment/Coinsurance",
+              "type": "input"
+            }
+          ]
+        },
+        "outOfPicketMaximum": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Out-of-Pocket Maximum",
+              "type": "input"
+            }
+          ]
+        },
+        "repatriation": {
+          "type": "boolean",
+          "isCustom": true,
+          "extendFields": [
+            {
+              "name": "Repatriation/Medical Evacuation Coverage",
+              "type": "textarea"
+            }
+          ]
+        }
+      },
+      "required": []
+    },
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/firstName",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/lastName",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine1",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine2",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/city", "width": 50 },
+        { "type": "Control", "scope": "#/properties/state", "width": 25 },
+        { "type": "Control", "scope": "#/properties/zip", "width": 25 },
+        {
+          "type": "Control",
+          "scope": "#/properties/dependentNames",
+          "width": 100,
+          "options": { "multi": true }
+        },
+        { "type": "Label", "text": "Select all applicable fields:" },
+        {
+          "type": "Control",
+          "scope": "#/properties/deductible",
+          "width": 72
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/copaymentCoinsurance",
+          "width": 72
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/outOfPicketMaximum",
+          "width": 72
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/repatriation",
+          "width": 72
+        }
+      ]
+    }
+  }
+}

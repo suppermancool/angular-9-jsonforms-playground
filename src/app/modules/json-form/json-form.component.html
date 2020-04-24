@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>JSON Form Angular Example</h1>
+
+  <mat-form-field>
+    <mat-label>Select Example</mat-label>
+    <mat-select (selectionChange)="onChange($event)">
+      <mat-option *ngFor="let item of examples" [value]="item.name">
+        {{item.label}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-slide-toggle (change)="setReadonly($event)">Is Read Only</mat-slide-toggle>
+  <h1></h1>
+
+  <jsonforms-outlet></jsonforms-outlet>
+</div>

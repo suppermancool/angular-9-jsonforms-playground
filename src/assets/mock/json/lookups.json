@@ -1,0 +1,28 @@
+{
+  "marketSegment": [
+    "U65GF",
+    "U65GM",
+    "MSUP",
+    "IFPEXC",
+    "U65",
+    "FBHP",
+    "SGACA",
+    "SGGF",
+    "SGGM",
+    "MIDFI",
+    "LGSF",
+    "LGFI",
+    "ASSN",
+    "CND",
+    "LGMSUP",
+    "U65GF"
+  ],
+  "state": ["SD", "IA"],
+  "subject": [
+    "Legal",
+    "Billing/Finance",
+    "Membership",
+    "Claims & Billing/Finance"
+  ],
+  "audience": ["Attorney", "Housing Authority", "Member"]
+}

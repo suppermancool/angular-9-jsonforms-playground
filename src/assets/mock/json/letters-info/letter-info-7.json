@@ -1,0 +1,115 @@
+{
+  "id": 7,
+  "name": "Claims: Previously Adjusted (B-9619646) No Letter Name",
+  "subject": ["All Subjects"],
+  "audience": ["Member"],
+  "marketSegment": ["U65GF"],
+  "canUploadDocument": false,
+  "canShowLetterName": false,
+  "autoAttachedForms": ["Attached form 1", "Attached form 2"],
+  "jsonFormData": {
+    "name": "B9619646",
+    "label": "B9619646",
+    "data": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "",
+      "city": "Springfield",
+      "state": "IA",
+      "zip": 50312,
+      "memberName1": "Homer Simpson",
+      "effectiveDate1": "2020-03-02",
+      "memberName2": "Marge Simpson",
+      "effectiveDate2": "2020-03-02",
+      "memberName3": "Lisa Simpson",
+      "effectiveDate3": "2020-03-02",
+      "memberName4": "Bart Simpson",
+      "effectiveDate4": "2020-03-02",
+      "cxaName": "Patty Bouvier"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "addressLine1": { "type": "string" },
+        "addressLine2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "enum": ["IA", "SD"] },
+        "zip": { "type": "integer" },
+        "memberName1": { "type": "string", "title": "Member Name" },
+        "effectiveDate1": {
+          "type": "string",
+          "title": "Effective Date",
+          "format": "date"
+        },
+        "memberName2": { "type": "string", "title": "Member Name" },
+        "effectiveDate2": {
+          "type": "string",
+          "title": "Effective Date",
+          "format": "date"
+        },
+        "memberName3": { "type": "string", "title": "Member Name" },
+        "effectiveDate3": {
+          "type": "string",
+          "title": "Effective Date",
+          "format": "date"
+        },
+        "memberName4": { "type": "string", "title": "Member Name" },
+        "effectiveDate4": {
+          "type": "string",
+          "title": "Effective Date",
+          "format": "date"
+        },
+        "cxaName": { "type": "string", "title": "CXA Name" }
+      },
+      "required": []
+    },
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/firstName", "width": 50 },
+        { "type": "Control", "scope": "#/properties/lastName", "width": 50 },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine1",
+          "width": 50
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/addressLine2",
+          "width": 50
+        },
+        { "type": "Control", "scope": "#/properties/city", "width": 50 },
+        { "type": "Control", "scope": "#/properties/state", "width": 25 },
+        { "type": "Control", "scope": "#/properties/zip", "width": 25 },
+        { "type": "Control", "scope": "#/properties/memberName1", "width": 68 },
+        {
+          "type": "Control",
+          "scope": "#/properties/effectiveDate1",
+          "width": 32
+        },
+        { "type": "Control", "scope": "#/properties/memberName2", "width": 68 },
+        {
+          "type": "Control",
+          "scope": "#/properties/effectiveDate2",
+          "width": 32
+        },
+        { "type": "Control", "scope": "#/properties/memberName3", "width": 68 },
+        {
+          "type": "Control",
+          "scope": "#/properties/effectiveDate3",
+          "width": 32
+        },
+        { "type": "Control", "scope": "#/properties/memberName4", "width": 68 },
+        {
+          "type": "Control",
+          "scope": "#/properties/effectiveDate4",
+          "width": 32
+        },
+        { "type": "Control", "scope": "#/properties/cxaName", "width": 68 }
+      ]
+    }
+  }
+}

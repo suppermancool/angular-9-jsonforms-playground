@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Attorney - Authorization Request (B-3320)",
+    "subject": ["Legal"],
+    "audience": ["Attorney"],
+    "marketSegment": ["U65GF", "U65GM"]
+  },
+  {
+    "id": 2,
+    "name": "Housing - POA Needed (B-4684)",
+    "subject": ["Billing/Finance"],
+    "audience": ["Housing Authority"],
+    "marketSegment": ["MSUP"]
+  },
+  {
+    "id": 3,
+    "name": "Cancellation Verification (B-4009)",
+    "subject": ["Membership"],
+    "audience": ["Member"],
+    "marketSegment": ["U65GF", "U65GM", "MSUP", "IFPEXC", "U65", "FBHP", "SGACA", "SGGF", "SGGM", "MIDFI", "LGSF", "LGFI", "ASSN", "CND", "LGMSUP"]
+  },
+  {
+    "id": 4,
+    "name": "Cashed Check Copy (B-5651-9601-9602)",
+    "subject": ["Claims & Billing/Finance"],
+    "audience": ["All"],
+    "marketSegment": ["MSUP"]
+  },
+  {
+    "id": 5,
+    "name": "Call Back - With Answer - FBHP (N-8620021)",
+    "subject": ["All Subjects"],
+    "audience": ["Member"],
+    "marketSegment": ["U65GF"]
+  },
+  {
+    "id": 6,
+    "name": "Claims: Previously Adjusted (B-9619646)",
+    "subject": ["All Subjects"],
+    "audience": ["Member"],
+    "marketSegment": ["U65GF"]
+  },
+  {
+    "id": 7,
+    "name": "Claims: Previously Adjusted (B-9619646) No Letter Name",
+    "subject": ["All Subjects"],
+    "audience": ["Member"],
+    "marketSegment": ["U65GF"]
+  }
+]

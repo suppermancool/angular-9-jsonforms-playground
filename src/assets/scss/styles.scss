@@ -1,0 +1,142 @@
+$black: rgba(0, 0, 0, 0.87);
+$black-light: rgba(0, 0, 0, 0.74);
+$black-light-more: rgba(0, 0, 0, 0.60);
+$black-placeholder: rgba(0, 0, 0, 0.38);
+$blue-light: #05a7e9;
+$blue-dark: #0088c8;
+$blue-bg: rgba(12, 152, 245, 0.08);
+$white: rgba(255, 255, 255, 0.87);
+$black-border: #9e9e9e;
+$gray-border: rgba(0, 0, 0, 0.12);
+$red: #D23431;
+$red-light: #CF6679;
+$red-border: #D4322B;
+$red-error-text: #CD3530;
+$red-bg: #FFF7F7;
+
+
+.mat-form-field-appearance-outline {
+  .mat-form-field-outline {
+    color: $black-border;
+  }
+
+  .mat-form-field-label-wrapper {
+    top: -13px;
+    left: 2px;
+  }
+
+  .mat-select-trigger {
+    .mat-select-arrow-wrapper {
+      transform: translateY(-5%);
+    }
+  }
+
+  .mat-select-arrow {
+    color: $black;
+  }
+
+  .mat-form-field-wrapper {
+    margin: 0px !important;
+
+    .mat-form-field-flex {
+      padding: 0 12px 0 12px;
+
+      .mat-form-field-outline {
+        top: 8px;
+      }
+    }
+  }
+
+  .mat-form-field-infix {
+    border-top: 14px solid transparent;
+    padding: 12px 0 17px 2px;
+
+    input,
+    textarea {
+      font-size: 16px;
+      color: $black;
+      letter-spacing: 0.5px;
+    }
+
+    input {
+      line-height: 19px;
+    }
+
+    textarea {
+      line-height: 24px;
+    }
+  }
+
+  .mat-form-field-subscript-wrapper {
+    margin-top: 0;
+    top: calc(100% + 3px);
+    overflow: visible;
+
+    .mat-error {
+      font-size: 12px;
+      color: $red-light;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &.mat-form-field-invalid.ng-touched.ng-pristine.ng-invalid {
+    .mat-form-field-label-wrapper,
+    .mat-input-server:focus
+      + .mat-form-field-label-wrapper
+      .mat-form-field-label-wrapper {
+      .mat-form-field-label {
+        mat-label {
+          color: $red-light;
+        }
+      }
+    }
+  }
+}
+
+.mat-form-field-label-wrapper,
+mat-label,
+.mat-select-value-text {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 19px;
+  color: $black-placeholder;
+}
+
+.mat-select-value-text {
+  color: $black;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label-wrapper,
+.mat-form-field-appearance-outline.mat-form-field-can-float
+  .mat-input-server:focus
+  + .mat-form-field-label-wrapper
+  .mat-form-field-label-wrapper {
+  left: 0;
+
+  .mat-form-field-label {
+    transform: translateY(-25px) scale(0.75);
+    font-weight: 400;
+
+    mat-label {
+      color: $black;
+    }
+  }
+}
+
+.mat-form-field {
+  min-width: 0;
+}
+
+.mat-error {
+  font-size: 12px;
+  color: $red-light;
+  letter-spacing: 0.4px;
+}
+
+.mat-form-field-appearance-outline.mat-focused.mat-warn
+  .mat-form-field-outline-thick,
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+  .mat-form-field-outline-thick {
+  color: $red;
+}

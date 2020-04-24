@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "EFT Form (M-5779)",
+    "marketSegment": ["U65GF"],
+    "state": ["IA"]
+  },
+  {
+    "id": 2,
+    "name": "Contract Change Form (N-5428)",
+    "marketSegment": ["U65GF", "U65GM"],
+    "state": ["SD"]
+  },
+  {
+    "id": 3,
+    "name": "Contract Change Form (N-3704)",
+    "marketSegment": ["MSUP"],
+    "state": ["SD"]
+  },
+  {
+    "id": 4,
+    "name": "Application for Medicare Blue Supp (M-53314)",
+    "marketSegment": ["U65GF", "U65GM", "MSUP", "IFPEXC", "U65", "FBHP", "SGACA", "SGGF", "SGGM", "MIDFI", "LGSF", "LGFI", "ASSN", "CND", "LGMSUP"],
+    "state": ["IA", "SD"]
+  },
+  {
+    "id": 5,
+    "name": "Application for Vision (SD) (M-3318890)",
+    "marketSegment": ["MSUP"],
+    "state": ["IA", "SD"]
+  }
+]

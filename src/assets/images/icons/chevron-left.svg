@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>📍 Leading Icon l Use High Emphasis</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="15.41 7.41 14 6 8 12 14 18 15.41 16.59 10.83 12"></polygon>
+    </defs>
+    <g id="Correspondence" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Correspondence---form---send" transform="translate(-56.000000, -54.000000)">
+            <g id="App-bar/1.-Top-/A.-Regular/a.-Flat/_Light" transform="translate(0.000000, 32.000000)">
+                <g id="icon/navigation/chevron_left_24px" transform="translate(48.000000, 16.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="-↳Color" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
